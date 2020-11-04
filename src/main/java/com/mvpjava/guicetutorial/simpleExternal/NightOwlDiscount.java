@@ -1,4 +1,4 @@
-package com.mvpjava.guicetutorial.singleImpl;
+package com.mvpjava.guicetutorial.simpleExternal;
 
 public class NightOwlDiscount implements Discountable{
 

@@ -1,14 +1,15 @@
 package com.yang.guicetutorial.exampleImprove;
 
+import static com.yang.guicetutorial.exampleImprove.Annotation.YangAnnotation;
 import com.google.inject.Inject;
 import com.yang.guicetutorial.common.Message;
 import com.yang.guicetutorial.database.MyDatabase;
 
-public class FooHandler {
+public class MessageHandler_forYang {
     private MyDatabase db;
 
     @Inject
-    public FooHandler(@Yang MyDatabase db) {
+    public MessageHandler_forYang(@YangAnnotation MyDatabase db) {
         this.db = db;
     }
 

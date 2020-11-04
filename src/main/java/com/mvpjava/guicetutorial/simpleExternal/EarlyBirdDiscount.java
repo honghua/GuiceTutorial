@@ -1,10 +1,10 @@
-package com.mvpjava.guicetutorial.provider.implicitProvider;
+package com.mvpjava.guicetutorial.simpleExternal;
 
 public class EarlyBirdDiscount implements Discountable {
 
     @Override
     public double getDiscount() {
-        return 0.35D;
+        return 0.25;
     }
 
 }

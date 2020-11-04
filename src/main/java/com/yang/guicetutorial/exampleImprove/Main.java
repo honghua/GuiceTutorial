@@ -8,12 +8,15 @@ public class Main {
     static Injector injector = Guice.createInjector(new BasicModule());
     public static void main(String[] args) {
 
-        MessageHandler handler = new MessageHandler(new MyDatabaseImplSql());
+//        Naive instance injection
+//        MessageHandler handler = new MessageHandler(new MyDatabaseImplSql());
 
-//        MessageHandler handler = injector.getInstance(MessageHandler.class);
-//        System.out.println(
-//            handler.sendMessage(1, 2, "hello")
-//        );
+
+        // Dependency injection with Guice: better
+        MessageHandler handler = injector.getInstance(MessageHandler.class);
+        System.out.println(
+            handler.sendMessage(1, 2, "hello")
+        );
     }
 
     public void foo() {

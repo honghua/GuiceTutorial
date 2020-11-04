@@ -1,4 +1,4 @@
-package com.mvpjava.guicetutorial.singleImpl;
+package com.mvpjava.guicetutorial.simpleExternal;
 import com.google.inject.ImplementedBy;
 
 @ImplementedBy(EarlyBirdDiscount.class)  

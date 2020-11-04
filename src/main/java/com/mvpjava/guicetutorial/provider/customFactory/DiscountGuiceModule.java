@@ -13,6 +13,8 @@ public class DiscountGuiceModule extends com.google.inject.AbstractModule {
         mapBinder.addBinding(EarlyBird).to(EarlyBirdDiscount.class);
         mapBinder.addBinding(NightOwl).to(NightOwlDiscount.class);
         mapBinder.addBinding(NoDiscount).to(NoDiscount.class);
+
+        bind(DiscountFactory.class).to(CartDiscountFactory.class);
     }
 
     public enum DiscountOption {

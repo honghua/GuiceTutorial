@@ -1,4 +1,5 @@
-package com.mvpjava.guicetutorial.singleImpl;
+package com.mvpjava.guicetutorial.singleImplWithProvider;
+
 
 public class EarlyBirdDiscount implements Discountable {
 

@@ -1,9 +1,7 @@
 package com.yang.guicetutorial.exampleImprove;
 
 import com.google.inject.AbstractModule;
-import com.google.inject.Guice;
 import com.google.inject.Inject;
-import com.google.inject.Injector;
 import com.yang.guicetutorial.GuiceRule;
 import com.yang.guicetutorial.common.Message;
 import com.yang.guicetutorial.database.MyDatabase;

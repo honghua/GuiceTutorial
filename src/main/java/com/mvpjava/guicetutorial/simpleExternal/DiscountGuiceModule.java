@@ -1,4 +1,4 @@
-package com.mvpjava.guicetutorial.singleImpl;
+package com.mvpjava.guicetutorial.simpleExternal;
 
 public class DiscountGuiceModule  extends com.google.inject.AbstractModule{
 
@@ -6,5 +6,5 @@ public class DiscountGuiceModule  extends com.google.inject.AbstractModule{
     protected void configure() {
        bind(Discountable.class).to(NightOwlDiscount.class);
     }
-    
+
 }
