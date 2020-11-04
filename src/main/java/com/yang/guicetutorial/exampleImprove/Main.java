@@ -10,8 +10,7 @@ public class Main {
 
 //        Naive instance injection
 //        MessageHandler handler = new MessageHandler(new MyDatabaseImplSql());
-
-
+        
         // Dependency injection with Guice: better
         MessageHandler handler = injector.getInstance(MessageHandler.class);
         System.out.println(
