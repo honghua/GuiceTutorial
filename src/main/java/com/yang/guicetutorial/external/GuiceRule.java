@@ -1,4 +1,4 @@
-package com.yang.guicetutorial;
+package com.yang.guicetutorial.external;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

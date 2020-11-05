@@ -4,19 +4,21 @@ import com.yang.guicetutorial.common.Message;
 import com.yang.guicetutorial.database.MyDatabaseImplSql;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 
 import static com.google.common.truth.Truth.assertThat;
 
-public class MessageHandler_Test {
+public class MessageHandler_TestMock {
 
     private MessageHandler handler;
 
     
+//    @Rule public final Mocks mock = new Mocks(this);
 
     @Before
     public void setUp() throws Exception {
-        handler = new MessageHandler(new MyDatabaseImplSql());
+//        handler = Mockito.mock(MessageHandler.class);
     }
 
     @After
